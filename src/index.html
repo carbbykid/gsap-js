@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>GSAP</title>
+  </head>
+  <body>
+    <div class="flex flex-col justify-center">
+      <div class="my-[100px] flex flex-col gap-[1000px]">
+        <div class="a w-[200px] h-[200px] text-white bg-green-500">a</div>
+
+        <div class="relative">
+          <div
+            class="b z-10 absolute top-0 left-0 w-[200px] h-[200px] text-white bg-blue-500"
+          >
+            b
+          </div>
+
+          <div
+            class="ghost z-9 absolute top-0 left-0 w-[200px] h-[200px] text-white bg-gray-500 bg-opacity-20"
+          >
+            ghost
+          </div>
+          <div
+            class="ghost1 z-8 absolute top-0 left-0 w-[200px] h-[200px] text-white bg-gray-500 bg-opacity-10"
+          >
+            ghost
+          </div>
+          <div
+            class="ghost2 z-7 absolute top-0 left-0 w-[200px] h-[200px] text-white bg-gray-500 bg-opacity-5"
+          >
+            ghost
+          </div>
+        </div>
+
+        <div class="relative">
+          <div
+            class="ghost_c absolute top-0 left-0 w-[200px] h-[200px] text-white bg-gray-500 bg-opacity-20"
+          >
+            ghost
+          </div>
+          <div class="c w-[200px] h-[200px] text-white bg-red-500">c</div>
+        </div>
+        <div class="d w-[200px] h-[200px] text-white bg-yellow-500">d</div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div
+        class="hero relative z-10 h-screen text-5xl font-bold flex items-center justify-center text-white bg-slate-400"
+      >
+        ChiPoPo
+      </div>
+      <div class="slide relative overflow-hidden">
+        <div
+          class="slide1 h-screen w-full text-9xl flex items-center justify-center font-extrabold text-white bg-green-800"
+        >
+          Container1
+        </div>
+        <div
+          class="slide2 absolute top-0 left-0 h-screen w-full text-9xl flex items-center justify-center font-extrabold text-white bg-orange-800"
+        >
+          Container2
+        </div>
+        <div
+          class="slide3 absolute top-0 left-0 h-screen w-full text-9xl flex items-center justify-center font-extrabold text-white bg-yellow-300"
+        >
+          Container3
+        </div>
+        <div
+          class="slide4 absolute top-0 left-0 h-screen w-full text-9xl flex items-center justify-center font-extrabold text-white bg-blue-800"
+        >
+          Container4
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
